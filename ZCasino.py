@@ -19,7 +19,7 @@ except ValueError as e:
 	quit()
 	
 # Is there any dollars left ?
-while isOver == False:
+while money > 0:
 	# Display the left money
 	print "You have ", money, "$ left."
 
@@ -74,10 +74,6 @@ while isOver == False:
 				
 			else:
 				money -= amount
-				
-			# Is there money left ?
-			if money <= 0:
-				isOver = True
 
 # Game Over.
 print "Game Over ..."
